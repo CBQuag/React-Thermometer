@@ -7,9 +7,9 @@ const Thermostat = () => {
     let colorTemp = '#FFFFFF'
     
     if (temp < 72)
-        colorTemp = `rgb(${183+temp},${183+temp},255)`;
+        colorTemp = `rgb(${temp*3.5},${temp*3.5},255)`;
     if (temp > 72)
-        colorTemp = `rgb(255,${327-temp},${327-temp})`;
+        colorTemp = `rgb(255,${510-temp*3.5},${510-temp*3.5})`;
     const boxStyle = {
         backgroundColor: colorTemp,
         display: 'flex',
